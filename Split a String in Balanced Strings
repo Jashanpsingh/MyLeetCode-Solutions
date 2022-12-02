@@ -1,0 +1,30 @@
+class Solution {
+    public int balancedStringSplit(String s) {
+    
+    int count  = 0;
+        
+        int l_count = 0;
+        int r_count  = 0;
+    
+        char[] s_arr = s.toCharArray();    
+        
+        for(char c: s_arr){
+            
+            if(c=='L'){
+                l_count++;
+            }
+            
+            
+            else if(c=='R'){
+                r_count++;
+            }
+            
+            
+            if(l_count == r_count){
+                count++;
+            }
+            
+        }
+        return count;    
+    }
+}
