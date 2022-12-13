@@ -9,6 +9,6 @@ class Solution {
                 if((i + oneForth < size) && arr[i + oneForth] == arr[i]) {
                     return arr[i];}
                     }
-                    return -1;
+                    return 1;
                     }
                     }
